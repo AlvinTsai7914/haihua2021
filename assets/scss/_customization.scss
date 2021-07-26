@@ -1,0 +1,80 @@
+// Your customization code goes here  
+
+.member_name{ display: inline-block; width: 45px; height: 45px; border-radius: 50%; background: $primary; color: #fff; text-align: center; vertical-align: middle; line-height: 45px;} 
+
+.min-height {
+  min-height: calc(100vh - 300px);
+
+  @media(max-width:992px){
+    min-height: calc(100vh - 275px);
+  }
+
+  @media(max-width:767px){
+    min-height: calc(100vh - 259px);
+  }
+
+  @media(max-width:576px){
+    min-height: calc(100vh - 243px);
+  }
+}
+
+.min-height.with-banner {
+  min-height: calc(100vh - (300px + 160px));
+
+  @media(max-width:992px){
+    min-height: calc(100vh - (275px + 160px));
+  }
+
+  @media(max-width:767px){
+    min-height: calc(100vh - (259px + 160px));
+  }
+
+  @media(max-width:576px){
+    min-height: calc(100vh - (243px + 160px));
+  }
+}
+
+.min-height.with-list {
+  min-height: calc(100vh - (300px + 160px + 123px));
+
+  @media(max-width:992px){
+    min-height: calc(100vh - (275px + 160px + 123px));
+  }
+
+  @media(max-width:767px){
+    min-height: calc(100vh - (259px + 160px + 123px));
+  }
+
+  @media(max-width:576px){
+    min-height: calc(100vh - (243px + 160px + 123px));
+  }
+}
+
+.text-preline {
+  white-space: pre-line;
+}
+
+.list-inline-item{ position: relative;}
+
+.sub-menu{ 
+  width: 200px; 
+  padding: 15px; 
+  background: #FFF; 
+  border:1px solid $primary; 
+  border-radius: 0 0 10px 10px; 
+  color: black; 
+  text-align: center; 
+  position: absolute; 
+  right: 0; 
+  top: 55px; 
+  z-index: 1030; 
+  display: none;
+
+  @media(max-width:767px){
+    top: 40px;
+  }
+}
+
+.sub-menu.active{ 
+  display: block;
+}
